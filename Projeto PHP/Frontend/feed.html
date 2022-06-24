@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <link rel="stylesheet" href="./css/feed.css">
+    <script src="./js/gerais.js"></script>
+    <script src="./js/feed.js"></script>
+</head>
+<body>
+    <div id="novaTarefa">
+        <form action="#">
+            <img id="fecharPopUpCriarTarefa" src="./img/fechar.png" alt="Fechar">
+            <div class="cabecalhoNovaTarefa">
+                <h1>Nova Tarefa</h1>
+            </div>
+            <label for="tarefa">O que preciso fazer?</label>
+            <textarea required name="tarefa" id="textotarefa" placeholder="Ex: Arrumar minha cama no dia ##/##"></textarea>
+            <label for="dataLimite">Preciso entragar até:</label>
+            <input type="date" id="dataLimite" name="dataLimite" required>
+            <div class="acoesFormCadastroTarefa">
+                <button id="criarNovaTarefa">Criar</button>
+            </div>
+        </form>
+    </div>
+    <div id="editarTarefa">
+        <form action="#">
+            <img id="fecharPopUpEditarTarefa" src="./img/fechar.png" alt="Fechar">
+            <div class="cabecalhoEditarTarefa">
+                <h1>Editando</h1>
+            </div>
+            <label for="tarefa">O que preciso fazer?</label>
+            <textarea name="tarefa" id="textotarefaEditar" placeholder="Ex: Arrumar minha cama no dia ##/##"></textarea>
+            <label for="dataLimite">Preciso entragar até:</label>
+            <input type="date" id="dataLimiteEditar" name="dataLimite">
+            <input type="text" id="idTarefaEditar" hidden>
+            <div class="acoesFormEditarTarefa">
+                <button id="confirmarEditarTarefa">Editar</button>
+            </div>
+        </form>
+    </div>
+    <div id="principalFeed">
+        <div class="cabecalho">Minha lista de afazeres</div>
+        <div class="acoesTarefas">
+            <button onclick="popUpTarefa()">+ Nova Tarefa</button>
+            <button onclick="sair()">Sair</button>
+        </div>
+        <div class="conteudo">
+            <table>
+                <thead>
+                    <tr class="cabecalhoTabela">
+                        <th>Criado em</th>
+                        <th>Tarefa</th>
+                        <th>Termina em</th>
+                        <th>Acoes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

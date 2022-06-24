@@ -1,0 +1,77 @@
+@import url("gerais.css");
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--cor-principal);
+}
+
+a img{
+    width: 14vh;
+    height: 14vh;
+    position: fixed;
+    top: 20px;
+    left: 22px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    color: black;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.container .form_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--tela-login);
+    padding: 25px 60px 40px 60px;
+    border-radius: 10px;
+}
+
+.container .form_box input{
+    width: 250px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    background-color: transparent;
+}
+
+.container .form_box .btt_login{
+    cursor: pointer;
+    border: none;
+    background-color: var(--cor-secundaria);
+    color: black;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.container .form_box .btt_login:hover{
+    background-color: var(--cor-principal);
+    transition: 0.3s;
+}
+
+.text-criar-conta{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.text1-criar-conta{
+    margin-right: 6px;
+}
